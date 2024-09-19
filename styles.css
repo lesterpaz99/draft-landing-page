@@ -1,3 +1,25 @@
+/* variables */
+:root {
+  --dark-bg-color: #1f2937;
+  --main-title-size: 48px;
+  --titles-color: #f9faf8;
+  --titles-font-weight: 900;
+  --secondary-text-size: 18px;
+  --secondary-text-color: #e5e7eb;
+
+  --header-logo-size: 24px;
+  --header-logo-color: var(--titles-color);
+
+  --cta-color: #3882f6;
+  --info-header-text-size: 36px;
+  --info-header-text-color: var(--dark-bg-color);
+  --info-header-text-weight: 900;
+
+  --quote-bg-color: var(--secondary-text-color);
+  --quote-color: #1f2937;
+  --quote-text-size: 36px;
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -20,6 +42,8 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: var(--dark-bg-color);
+  font-family: 'Roboto', system-ui;
 }
 
 /*
@@ -49,4 +73,118 @@ p, h1, h2, h3, h4, h5, h6 {
 */
 #root, #__next {
   isolation: isolate;
+}
+
+/* Reset css */
+
+html, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header, main, section {
+  padding-inline: 15%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--dark-bg-color);
+  padding-block: 14px;
+}
+
+header .logo {
+  font-size: var(--header-logo-size);
+  color: var(--header-logo-color);
+  font-weight: var(--info-header-text-weight);
+}
+
+header nav .menu {
+  display: flex;
+  gap: 24px;
+}
+
+.menu a {
+  font-size: var(--secondary-text-size);
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+
+main {
+  padding-block: 100px;
+  display: flex;
+  gap: 42px;
+  /* flex-grow: 1; */
+  color: var(--titles-color);
+}
+
+main .hero-content {
+  max-width: 45%;
+}
+
+main h1 {
+  font-size: var(--main-title-size);
+  font-weight: var(--titles-font-weight);
+  line-height: 1.2;
+}
+
+main p {
+  margin-bottom: 12px;
+  font-size: var(--secondary-text-size);
+  line-height: 1.2;
+  color: var(--secondary-text-color);
+}
+
+main .hero-img {
+  width: 55%;
+  background-color: rgb(154, 153, 153);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+main .hero-btn {
+  padding: 7px 34px;
+  background-color: var(--cta-color);
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  color: var(--titles-color);
 }
