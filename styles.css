@@ -8,14 +8,14 @@
   --secondary-text-color: #e5e7eb;
 
   --header-logo-size: 24px;
-  --header-logo-color: var(--titles-color);
+  --header-logo-color: #f9faf8;
 
   --cta-color: #3882f6;
   --info-header-text-size: 36px;
-  --info-header-text-color: var(--dark-bg-color);
+  --info-header-text-color: #1f2937;
   --info-header-text-weight: 900;
 
-  --quote-bg-color: var(--secondary-text-color);
+  --quote-bg-color: #e5e7eb;
   --quote-color: #1f2937;
   --quote-text-size: 36px;
 }
@@ -228,4 +228,28 @@ main .hero-btn {
 .card p {
   text-align: center;
   color: var(--dark-bg-color);
+}
+
+.quote-section  {
+  background-color: var(--quote-bg-color);
+  padding-block: 140px;
+}
+
+.quote-container {
+  width: 80%;
+  margin-inline: auto;
+  font-size: var(--quote-text-size);
+}
+
+.quote {
+  font-style: italic;
+  font-weight: lighter;
+  color: var(--quote-color)
+}
+
+.author {
+  font-size: var(--header-logo-size);
+  color: var(--quote-color);
+  text-align: end;
+  font-weight: var(--info-header-text-weight);
 }
