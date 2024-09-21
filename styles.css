@@ -119,7 +119,7 @@ table {
 	border-spacing: 0;
 }
 
-header, main, section {
+header, main, section, footer {
   padding-inline: 15%;
 }
 
@@ -232,7 +232,7 @@ main .hero-btn {
 
 .quote-section  {
   background-color: var(--quote-bg-color);
-  padding-block: 140px;
+  padding-block: 100px;
 }
 
 .quote-container {
@@ -252,4 +252,46 @@ main .hero-btn {
   color: var(--quote-color);
   text-align: end;
   font-weight: var(--info-header-text-weight);
+}
+
+.cta-section {
+  padding-block: 100px;
+  background-color: var(--titles-color);
+}
+
+.cta-container {
+  padding: 50px 110px;
+  background-color: var(--cta-color);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta-container h2 {
+  color: var(--titles-color);
+  font-size: var(--header-logo-size);
+  font-weight: var(--info-header-text-weight);
+}
+
+.cta-container p {
+  color: var(--secondary-text-color);
+  font-size: var(--secondary-text-size);
+}
+
+.cta-btn {
+  border: 2px solid var(--header-logo-color);
+  color: var(--header-logo-color);
+  background-color: transparent;
+  outline: none;
+  border-radius: 8px;
+  padding: 8px 32px;
+  font-weight: var(--info-header-text-weight);
+}
+
+footer {
+  padding-block: 40px;
+  color: var(--secondary-text-color);
+  font-size: var(--secondary-text-size);
+  text-align: center;
 }
